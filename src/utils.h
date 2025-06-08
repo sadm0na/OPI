@@ -13,7 +13,7 @@
 #define FILE_NOT_FOUND -5
 #define STRING_OVERFLOW -6
 #define FILE_CREATION_ERROR -7
-#define INVALID_PARAMETR -5
+#define INVALID_PARAMETR -8
 
 int is_vowel(char c);
 int delete_slashn(char *str);
