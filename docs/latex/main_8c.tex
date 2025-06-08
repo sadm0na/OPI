@@ -1,0 +1,87 @@
+\doxysection{src/main.c File Reference}
+\hypertarget{main_8c}{}\label{main_8c}\index{src/main.c@{src/main.c}}
+
+
+Главный модуль программы  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include "{}utils.\+h"{}}\newline
+Include dependency graph for main.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{main_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Главная функция программы \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Главный модуль программы 
+
+Программа выполняет следующие действия для каждой строки входного файла\+:
+\begin{DoxyItemize}
+\item Разбивает строку на слова
+\item Находит слова с min/max количеством гласных
+\item Меняет их местами
+\item Сохраняет результат в новый файл 
+\end{DoxyItemize}
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8c_a0ddf1224851353fc92bfbff6f499fa97}\label{main_8c_a0ddf1224851353fc92bfbff6f499fa97} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char \texorpdfstring{$\ast$}{*}}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Главная функция программы 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Количество аргументов командной строки \\
+\hline
+{\em argv} & Массив аргументов (ожидается имя входного файла) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Код возврата\+:
+\begin{DoxyItemize}
+\item OK (0) в случае успеха,
+\item Отрицательные значения при ошибках (см. Return\+Codes)
+\end{DoxyItemize}
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+Ограничения\+:
+\begin{DoxyItemize}
+\item Максимальная длина строки\+: STR\+\_\+\+LEN символов
+\item Максимальная длина слова\+: WORD\+\_\+\+LEN символов
+\item Максимальное количество слов в строке\+: WORD\+\_\+\+NUMBER
+\end{DoxyItemize}
+\end{DoxyWarning}
+Пример использования\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./app.exe\ func\_tests/data/pos\_01\_in.txt}
+
+\end{DoxyCode}
+
+
+\begin{DoxyNote}{Note}
+Результат сохраняется в файл func\+\_\+tests/scripts/answer.\+txt 
+\end{DoxyNote}
+\texorpdfstring{$<$}{<} Буфер для входящей строки (+2 для ~\newline
+ и \textbackslash{}0)
+
+\texorpdfstring{$<$}{<} Буфер для результирующей строки
+
+\texorpdfstring{$<$}{<} Счетчик обработанных строк
+
+\texorpdfstring{$<$}{<} Массив указателей на слова

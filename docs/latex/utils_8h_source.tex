@@ -1,0 +1,33 @@
+\doxysection{utils.\+h}
+\hypertarget{utils_8h_source}{}\label{utils_8h_source}\index{src/utils.h@{src/utils.h}}
+\mbox{\hyperlink{utils_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ UTILS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ UTILS\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ STR\_LEN\ 256}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ WORD\_NUMBER\ 128}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ WORD\_LEN\ 16}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ OK\ 0}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ EMPTY\_FILE\ -\/1}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ STR\_OVERFLOW\ -\/2}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#define\ WORD\_OVERFLOW\ -\/3}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ MISSING\_ARGUMENT\ -\/4}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ FILE\_NOT\_FOUND\ -\/5}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ FILE\_CREATION\_ERROR\ -\/6}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#define\ INVALID\_PARAMETR\ -\/7}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{utils_8h_ab4f6b8ec7e5cc9300173c2b85f0cab58}{is\_vowel}}(\textcolor{keywordtype}{char}\ c);}
+\DoxyCodeLine{00037\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{utils_8h_a157e070792ed0bf21de87022b56ff700}{delete\_slashn}}(\textcolor{keywordtype}{char}\ *str);}
+\DoxyCodeLine{00038\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{utils_8h_a154ef0af7987480b9b41610c01780fd8}{count\_vowels}}(\textcolor{keywordtype}{char}\ *word,\ \textcolor{keywordtype}{int}\ len);}
+\DoxyCodeLine{00039\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{utils_8h_aa69195d30f71bb3cb2bf7836f5c566ca}{find\_min\_max\_vowels}}(\textcolor{keywordtype}{char}\ *words\_array[\mbox{\hyperlink{utils_8h_a64785d33030e80a397138791335db998}{WORD\_NUMBER}}],\ \textcolor{keywordtype}{int}\ word\_count,\ \textcolor{keywordtype}{int}\ *min\_vowel,\ \textcolor{keywordtype}{int}\ *max\_vowel);}
+\DoxyCodeLine{00040\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{utils_8h_ac9cbe6615d4a6e686877a77529ad0aca}{swap\_min\_max}}(\textcolor{keywordtype}{char}\ *words\_array[\mbox{\hyperlink{utils_8h_a64785d33030e80a397138791335db998}{WORD\_NUMBER}}],\ \textcolor{keywordtype}{int}\ arr\_len,\ \textcolor{keywordtype}{int}\ *min\_vowel,\ \textcolor{keywordtype}{int}\ *max\_vowel);}
+\DoxyCodeLine{00041\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{utils_8h_a7904f9b7c0a0e041b57b180b73ad7221}{divide\_string\_into\_words}}(\textcolor{keywordtype}{char}\ str[\mbox{\hyperlink{utils_8h_af5b27449abdfc22a937250696492e03f}{STR\_LEN}}\ +\ 1],\ \textcolor{keywordtype}{char}\ *words\_array[\mbox{\hyperlink{utils_8h_a64785d33030e80a397138791335db998}{WORD\_NUMBER}}]);}
+\DoxyCodeLine{00042\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{utils_8h_aa9bdd0a039e995179d6ca7e3cfee8353}{concatenate\_words}}(\textcolor{keywordtype}{char}\ new\_str[\mbox{\hyperlink{utils_8h_af5b27449abdfc22a937250696492e03f}{STR\_LEN}}\ +\ 1],\ \textcolor{keywordtype}{char}\ *words\_array[\mbox{\hyperlink{utils_8h_a64785d33030e80a397138791335db998}{WORD\_NUMBER}}],\ \textcolor{keywordtype}{int}\ word\_count);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

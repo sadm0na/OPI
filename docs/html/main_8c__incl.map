@@ -1,0 +1,9 @@
+<map id="src/main.c" name="src/main.c">
+<area shape="rect" id="Node000001" title="Главный модуль программы" alt="" coords="87,5,177,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,72,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,33,66,72,63,68,115,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="97,79,167,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="135,31,135,65,129,65,129,31"/>
+<area shape="rect" id="Node000004" href="$utils_8h.html" title="Прототипы функций и констант для utils.c." alt="" coords="191,79,254,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="148,29,199,68,195,72,145,33"/>
+</map>

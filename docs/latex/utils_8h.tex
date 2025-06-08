@@ -1,0 +1,258 @@
+\doxysection{src/utils.h File Reference}
+\hypertarget{utils_8h}{}\label{utils_8h}\index{src/utils.h@{src/utils.h}}
+
+
+Прототипы функций и констант для \doxylink{utils_8c}{utils.\+c}.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{utils_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{utils_8h_af5b27449abdfc22a937250696492e03f}\label{utils_8h_af5b27449abdfc22a937250696492e03f} 
+\#define {\bfseries STR\+\_\+\+LEN}~256
+\begin{DoxyCompactList}\small\item\em Максимально допустимая длина входной строки \end{DoxyCompactList}\item 
+\Hypertarget{utils_8h_a64785d33030e80a397138791335db998}\label{utils_8h_a64785d33030e80a397138791335db998} 
+\#define {\bfseries WORD\+\_\+\+NUMBER}~128
+\begin{DoxyCompactList}\small\item\em Максимально допустимое количество слов в строке \end{DoxyCompactList}\item 
+\Hypertarget{utils_8h_a440aadc538a75ca510439c46c27546ba}\label{utils_8h_a440aadc538a75ca510439c46c27546ba} 
+\#define {\bfseries WORD\+\_\+\+LEN}~16
+\begin{DoxyCompactList}\small\item\em Максимально допустимая длина слова \end{DoxyCompactList}\item 
+\Hypertarget{utils_8h_aba51915c87d64af47fb1cc59348961c9}\label{utils_8h_aba51915c87d64af47fb1cc59348961c9} 
+\#define {\bfseries OK}~0
+\item 
+\Hypertarget{utils_8h_a139de190b03f89a34200da01ce1dafc9}\label{utils_8h_a139de190b03f89a34200da01ce1dafc9} 
+\#define {\bfseries EMPTY\+\_\+\+FILE}~-\/1
+\item 
+\Hypertarget{utils_8h_a8d8a26bdb43d252fcc58813908204439}\label{utils_8h_a8d8a26bdb43d252fcc58813908204439} 
+\#define {\bfseries STR\+\_\+\+OVERFLOW}~-\/2
+\item 
+\Hypertarget{utils_8h_ac14213cf6c12acfdd4ae6684d3656ca1}\label{utils_8h_ac14213cf6c12acfdd4ae6684d3656ca1} 
+\#define {\bfseries WORD\+\_\+\+OVERFLOW}~-\/3
+\item 
+\Hypertarget{utils_8h_a3722a184bb01f895ee1bc5786cbefa8c}\label{utils_8h_a3722a184bb01f895ee1bc5786cbefa8c} 
+\#define {\bfseries MISSING\+\_\+\+ARGUMENT}~-\/4
+\item 
+\Hypertarget{utils_8h_a775241e32b7ccb12e344ae23aa2db6b1}\label{utils_8h_a775241e32b7ccb12e344ae23aa2db6b1} 
+\#define {\bfseries FILE\+\_\+\+NOT\+\_\+\+FOUND}~-\/5
+\item 
+\Hypertarget{utils_8h_a11ff5d56d21426a9289ef7dbd14a3061}\label{utils_8h_a11ff5d56d21426a9289ef7dbd14a3061} 
+\#define {\bfseries FILE\+\_\+\+CREATION\+\_\+\+ERROR}~-\/6
+\item 
+\Hypertarget{utils_8h_a50f9562b4942fffc20c9fd45b69903b6}\label{utils_8h_a50f9562b4942fffc20c9fd45b69903b6} 
+\#define {\bfseries INVALID\+\_\+\+PARAMETR}~-\/7
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{utils_8h_ab4f6b8ec7e5cc9300173c2b85f0cab58}{is\+\_\+vowel}} (char c)
+\begin{DoxyCompactList}\small\item\em Определяет, является ли буква гласной. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{utils_8h_a157e070792ed0bf21de87022b56ff700}{delete\+\_\+slashn}} (char \texorpdfstring{$\ast$}{*}str)
+\begin{DoxyCompactList}\small\item\em Удаляет символы новой строки (~\newline
+) из строки \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{utils_8h_a154ef0af7987480b9b41610c01780fd8}{count\+\_\+vowels}} (char \texorpdfstring{$\ast$}{*}word, int len)
+\begin{DoxyCompactList}\small\item\em Подсчитывает количество гласных букв в слове \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{utils_8h_aa69195d30f71bb3cb2bf7836f5c566ca}{find\+\_\+min\+\_\+max\+\_\+vowels}} (char \texorpdfstring{$\ast$}{*}words\+\_\+array\mbox{[}\mbox{\hyperlink{utils_8h_a64785d33030e80a397138791335db998}{WORD\+\_\+\+NUMBER}}\mbox{]}, int word\+\_\+count, int \texorpdfstring{$\ast$}{*}min\+\_\+vowel, int \texorpdfstring{$\ast$}{*}max\+\_\+vowel)
+\begin{DoxyCompactList}\small\item\em Находит индексы слов с минимальным и максимальным количеством гласных \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{utils_8h_ac9cbe6615d4a6e686877a77529ad0aca}{swap\+\_\+min\+\_\+max}} (char \texorpdfstring{$\ast$}{*}words\+\_\+array\mbox{[}\mbox{\hyperlink{utils_8h_a64785d33030e80a397138791335db998}{WORD\+\_\+\+NUMBER}}\mbox{]}, int arr\+\_\+len, int \texorpdfstring{$\ast$}{*}min\+\_\+vowel, int \texorpdfstring{$\ast$}{*}max\+\_\+vowel)
+\begin{DoxyCompactList}\small\item\em Меняет местами слова с минимальным и максимальным количеством гласных в массиве \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{utils_8h_a7904f9b7c0a0e041b57b180b73ad7221}{divide\+\_\+string\+\_\+into\+\_\+words}} (char str\mbox{[}\mbox{\hyperlink{utils_8h_af5b27449abdfc22a937250696492e03f}{STR\+\_\+\+LEN}}+1\mbox{]}, char \texorpdfstring{$\ast$}{*}words\+\_\+array\mbox{[}\mbox{\hyperlink{utils_8h_a64785d33030e80a397138791335db998}{WORD\+\_\+\+NUMBER}}\mbox{]})
+\begin{DoxyCompactList}\small\item\em Разбивает строку на отдельные слова, используя пробел как разделитель \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{utils_8h_aa9bdd0a039e995179d6ca7e3cfee8353}{concatenate\+\_\+words}} (char new\+\_\+str\mbox{[}\mbox{\hyperlink{utils_8h_af5b27449abdfc22a937250696492e03f}{STR\+\_\+\+LEN}}+1\mbox{]}, char \texorpdfstring{$\ast$}{*}words\+\_\+array\mbox{[}\mbox{\hyperlink{utils_8h_a64785d33030e80a397138791335db998}{WORD\+\_\+\+NUMBER}}\mbox{]}, int word\+\_\+count)
+\begin{DoxyCompactList}\small\item\em Объединяет слова из массива обратно в одну строку через пробел \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Прототипы функций и констант для \doxylink{utils_8c}{utils.\+c}. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{utils_8h_aa9bdd0a039e995179d6ca7e3cfee8353}\label{utils_8h_aa9bdd0a039e995179d6ca7e3cfee8353} 
+\index{utils.h@{utils.h}!concatenate\_words@{concatenate\_words}}
+\index{concatenate\_words@{concatenate\_words}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{concatenate\_words()}{concatenate\_words()}}
+{\footnotesize\ttfamily int concatenate\+\_\+words (\begin{DoxyParamCaption}\item[{char}]{new\+\_\+str\mbox{[}\+STR\+\_\+\+LEN+1\mbox{]},  }\item[{char \texorpdfstring{$\ast$}{*}}]{words\+\_\+array\mbox{[}\+WORD\+\_\+\+NUMBER\mbox{]},  }\item[{int}]{word\+\_\+count }\end{DoxyParamCaption})}
+
+
+
+Объединяет слова из массива обратно в одну строку через пробел 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em new\+\_\+str} & Результирующая строка \\
+\hline
+\mbox{\texttt{ in}}  & {\em words\+\_\+array} & Массив слов \\
+\hline
+\mbox{\texttt{ in}}  & {\em word\+\_\+count} & Количество слов в массиве \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Код возврата\+:
+\begin{DoxyItemize}
+\item OK (0) в случае успеха
+\item INVALID\+\_\+\+PARAMETR если переданы NULL указатели или передано неверное количество слов 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\Hypertarget{utils_8h_a154ef0af7987480b9b41610c01780fd8}\label{utils_8h_a154ef0af7987480b9b41610c01780fd8} 
+\index{utils.h@{utils.h}!count\_vowels@{count\_vowels}}
+\index{count\_vowels@{count\_vowels}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{count\_vowels()}{count\_vowels()}}
+{\footnotesize\ttfamily int count\+\_\+vowels (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{word,  }\item[{int}]{len }\end{DoxyParamCaption})}
+
+
+
+Подсчитывает количество гласных букв в слове 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em word} & Слово, в котором ищутся гласные \\
+\hline
+\mbox{\texttt{ in}}  & {\em len} & Длина слова \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Код возврата\+:
+\begin{DoxyItemize}
+\item Количество гласных (число \texorpdfstring{$>$}{>}= 0)
+\item INVALID\+\_\+\+PARAMETR, если параметры неверны 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\Hypertarget{utils_8h_a157e070792ed0bf21de87022b56ff700}\label{utils_8h_a157e070792ed0bf21de87022b56ff700} 
+\index{utils.h@{utils.h}!delete\_slashn@{delete\_slashn}}
+\index{delete\_slashn@{delete\_slashn}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{delete\_slashn()}{delete\_slashn()}}
+{\footnotesize\ttfamily int delete\+\_\+slashn (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str }\end{DoxyParamCaption})}
+
+
+
+Удаляет символы новой строки (~\newline
+) из строки 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em str} & Входная строка, в которой удаляются символы \textquotesingle{}~\newline
+\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Код возврата\+:
+\begin{DoxyItemize}
+\item OK (0) в случае успеха
+\item INVALID\+\_\+\+PARAMETR если передан NULL-\/указатель 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\Hypertarget{utils_8h_a7904f9b7c0a0e041b57b180b73ad7221}\label{utils_8h_a7904f9b7c0a0e041b57b180b73ad7221} 
+\index{utils.h@{utils.h}!divide\_string\_into\_words@{divide\_string\_into\_words}}
+\index{divide\_string\_into\_words@{divide\_string\_into\_words}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{divide\_string\_into\_words()}{divide\_string\_into\_words()}}
+{\footnotesize\ttfamily int divide\+\_\+string\+\_\+into\+\_\+words (\begin{DoxyParamCaption}\item[{char}]{str\mbox{[}\+STR\+\_\+\+LEN+1\mbox{]},  }\item[{char \texorpdfstring{$\ast$}{*}}]{words\+\_\+array\mbox{[}\+WORD\+\_\+\+NUMBER\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Разбивает строку на отдельные слова, используя пробел как разделитель 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em str} & Входная строка \\
+\hline
+\mbox{\texttt{ out}}  & {\em words\+\_\+array} & Массив указателей, куда будут записаны слова \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Код ошибки\+:
+\begin{DoxyItemize}
+\item 0 если слово слишком длинное (\texorpdfstring{$>$}{>} WORD\+\_\+\+LEN)
+\item INVALID\+\_\+\+PARAMETR если один из аргументов равен NULL
+\end{DoxyItemize}
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Строка разбивается на слова с помощью функции strtok(). 
+\end{DoxyNote}
+\Hypertarget{utils_8h_aa69195d30f71bb3cb2bf7836f5c566ca}\label{utils_8h_aa69195d30f71bb3cb2bf7836f5c566ca} 
+\index{utils.h@{utils.h}!find\_min\_max\_vowels@{find\_min\_max\_vowels}}
+\index{find\_min\_max\_vowels@{find\_min\_max\_vowels}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{find\_min\_max\_vowels()}{find\_min\_max\_vowels()}}
+{\footnotesize\ttfamily int find\+\_\+min\+\_\+max\+\_\+vowels (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{words\+\_\+array\mbox{[}\+WORD\+\_\+\+NUMBER\mbox{]},  }\item[{int}]{word\+\_\+count,  }\item[{int \texorpdfstring{$\ast$}{*}}]{min\+\_\+vowel,  }\item[{int \texorpdfstring{$\ast$}{*}}]{max\+\_\+vowel }\end{DoxyParamCaption})}
+
+
+
+Находит индексы слов с минимальным и максимальным количеством гласных 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em words\+\_\+array} & Массив слов \\
+\hline
+\mbox{\texttt{ in}}  & {\em word\+\_\+count} & Количество слов в массиве \\
+\hline
+\mbox{\texttt{ out}}  & {\em min\+\_\+vowel} & Указатель на слово с минимальным числом гласных \\
+\hline
+\mbox{\texttt{ out}}  & {\em max\+\_\+vowel} & Указатель на слово с максимальным числом гласных \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Код возврата\+:
+\begin{DoxyItemize}
+\item OK (0) в случае успеха
+\item INVALID\+\_\+\+PARAMETR если один из указателей некорректен или индексы переданных слов вне допустимого диапазона 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\Hypertarget{utils_8h_ab4f6b8ec7e5cc9300173c2b85f0cab58}\label{utils_8h_ab4f6b8ec7e5cc9300173c2b85f0cab58} 
+\index{utils.h@{utils.h}!is\_vowel@{is\_vowel}}
+\index{is\_vowel@{is\_vowel}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{is\_vowel()}{is\_vowel()}}
+{\footnotesize\ttfamily int is\+\_\+vowel (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+Определяет, является ли буква гласной. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em c} & Символ, который будет проверяться. \\
+\hline
+\mbox{\texttt{ out}}  & {\em flag} & Флаг проверки, является ли символ гласной. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Код возврата\+:
+\begin{DoxyItemize}
+\item 0 если не гласная буква
+\item 1 если гласная буква 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\Hypertarget{utils_8h_ac9cbe6615d4a6e686877a77529ad0aca}\label{utils_8h_ac9cbe6615d4a6e686877a77529ad0aca} 
+\index{utils.h@{utils.h}!swap\_min\_max@{swap\_min\_max}}
+\index{swap\_min\_max@{swap\_min\_max}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{swap\_min\_max()}{swap\_min\_max()}}
+{\footnotesize\ttfamily int swap\+\_\+min\+\_\+max (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{words\+\_\+array\mbox{[}\+WORD\+\_\+\+NUMBER\mbox{]},  }\item[{int}]{arr\+\_\+len,  }\item[{int \texorpdfstring{$\ast$}{*}}]{min\+\_\+vowel,  }\item[{int \texorpdfstring{$\ast$}{*}}]{max\+\_\+vowel }\end{DoxyParamCaption})}
+
+
+
+Меняет местами слова с минимальным и максимальным количеством гласных в массиве 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em words\+\_\+array} & Массив слов \\
+\hline
+\mbox{\texttt{ in}}  & {\em arr\+\_\+len} & Длина массива \\
+\hline
+\mbox{\texttt{ in}}  & {\em min\+\_\+vowel} & Индекс слова с минимальным числом гласных \\
+\hline
+\mbox{\texttt{ in}}  & {\em max\+\_\+vowel} & Индекс слова с максимальным числом гласных \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Код возврата\+:
+\begin{DoxyItemize}
+\item OK (0) в случае успеха
+\item INVALID\+\_\+\+PARAMETR если указатели некорректны или индексы вне диапазона 
+\end{DoxyItemize}
+\end{DoxyReturn}
