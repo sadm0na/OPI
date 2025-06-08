@@ -27,8 +27,9 @@ int \mbox{\hyperlink{main_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc
 
 Программа выполняет следующие действия для каждой строки входного файла\+:
 \begin{DoxyItemize}
+\item Считывает очередную строку файла
 \item Разбивает строку на слова
-\item Находит слова с min/max количеством гласных
+\item Находит слова с минимальным и максимальным количеством гласных
 \item Меняет их местами
 \item Сохраняет результат в новый файл 
 \end{DoxyItemize}
@@ -55,7 +56,7 @@ int \mbox{\hyperlink{main_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc
 Код возврата\+:
 \begin{DoxyItemize}
 \item OK (0) в случае успеха,
-\item Отрицательные значения при ошибках (см. Return\+Codes)
+\item Отрицательные значения при ошибках
 \end{DoxyItemize}
 \end{DoxyReturn}
 \begin{DoxyWarning}{Warning}
@@ -76,11 +77,3 @@ int \mbox{\hyperlink{main_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc
 \begin{DoxyNote}{Note}
 Результат сохраняется в файл func\+\_\+tests/scripts/answer.\+txt 
 \end{DoxyNote}
-\texorpdfstring{$<$}{<} Буфер для входящей строки (+2 для ~\newline
- и \textbackslash{}0)
-
-\texorpdfstring{$<$}{<} Буфер для результирующей строки
-
-\texorpdfstring{$<$}{<} Счетчик обработанных строк
-
-\texorpdfstring{$<$}{<} Массив указателей на слова

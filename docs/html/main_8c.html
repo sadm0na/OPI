@@ -109,8 +109,9 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Главный модуль программы </p>
 <p>Программа выполняет следующие действия для каждой строки входного файла:</p><ul>
+<li>Считывает очередную строку файла</li>
 <li>Разбивает строку на слова</li>
-<li>Находит слова с min/max количеством гласных</li>
+<li>Находит слова с минимальным и максимальным количеством гласных</li>
 <li>Меняет их местами</li>
 <li>Сохраняет результат в новый файл </li>
 </ul>
@@ -151,7 +152,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Код возврата:<ul>
 <li>OK (0) в случае успеха,</li>
-<li>Отрицательные значения при ошибках (см. ReturnCodes)</li>
+<li>Отрицательные значения при ошибках</li>
 </ul>
 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Ограничения:<ul>
@@ -162,11 +163,6 @@ Functions</h2></td></tr>
 </dd></dl>
 <p>Пример использования: </p><div class="fragment"><div class="line">./app.exe func_tests/data/pos_01_in.txt</div>
 </div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>Результат сохраняется в файл func_tests/scripts/answer.txt </dd></dl>
-<p>&lt; Буфер для входящей строки (+2 для <br  />
- и \0)</p>
-<p>&lt; Буфер для результирующей строки</p>
-<p>&lt; Счетчик обработанных строк</p>
-<p>&lt; Массив указателей на слова</p>
 
 </div>
 </div>
