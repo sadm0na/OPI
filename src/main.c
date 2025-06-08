@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
         return FILE_NOT_FOUND;
     }
 
-    out_file = fopen("../func_tests/scripts/answer.txt", "w");
+    out_file = fopen("func_tests/scripts/answer.txt", "w");
     if (out_file == NULL)
     {
         printf("Error: Cannot create output file!\n");

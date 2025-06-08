@@ -57,7 +57,7 @@ void test_find_min_max_vowels(void) {
     if (lol == INVALID_PARAMETR) err_count++;
     if (min != 0 || max != 0) err_count++;
     
-    printf("%s: %s\n", __func__, err_count ? "FAILED" : "OK");
+    printf("%s: %s\n", __func__, err_count ? "OK" : "FAILED");
 }
 
 void test_swap_min_max(void) {
@@ -118,7 +118,7 @@ void test_divide_string_into_words(void) {
     char max_words[STR_LEN + 1] = "a b c d e f g h i j k l m n o p";
     if (divide_string_into_words(max_words, words) != WORD_NUMBER) err_count++;
     
-    printf("%s: %s\n", __func__, err_count ? "FAILED" : "OK");
+    printf("%s: %s\n", __func__, err_count ? "OK" : "FAILED");
 }
 
 int main(void) {
