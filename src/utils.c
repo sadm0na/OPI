@@ -93,6 +93,8 @@ int find_min_max_vowels(char *words_array[WORD_NUMBER], int word_count, int *min
     char *word = words_array[0];
     int min = count_vowels(word, strlen(word));
     int max = count_vowels(word, strlen(word));
+    *min_vowel = 0;
+    *max_vowel = 0;
 
     for (int i = 1; i < word_count; i++)
     {
